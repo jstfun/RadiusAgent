@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A04E9612A4E37220095835F /* RadiusAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9602A4E37220095835F /* RadiusAgentApp.swift */; };
+		8A04E9652A4E37220095835F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A04E9642A4E37220095835F /* Assets.xcassets */; };
+		8A04E9692A4E37220095835F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A04E9682A4E37220095835F /* Preview Assets.xcassets */; };
+		8A04E9732A4E37220095835F /* RadiusAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9722A4E37220095835F /* RadiusAgentTests.swift */; };
+		8A04E97D2A4E37220095835F /* RadiusAgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E97C2A4E37220095835F /* RadiusAgentUITests.swift */; };
+		8A04E97F2A4E37220095835F /* RadiusAgentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E97E2A4E37220095835F /* RadiusAgentUITestsLaunchTests.swift */; };
+		8A04E98F2A4E39810095835F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E98E2A4E39810095835F /* Request.swift */; };
+		8A04E9912A4E39A30095835F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9902A4E39A30095835F /* APIError.swift */; };
+		8A04E9932A4E3A1F0095835F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9922A4E3A1F0095835F /* HTTPClient.swift */; };
+		8A04E9952A4E3A490095835F /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9942A4E3A490095835F /* URLSessionHTTPClient.swift */; };
+		8A04E9972A4E3A7D0095835F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9962A4E3A7D0095835F /* APIService.swift */; };
+		8A04E99A2A4E3AB90095835F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9992A4E3AB90095835F /* Constants.swift */; };
+		8A04E9A02A4E3C2E0095835F /* GetFacilitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E99F2A4E3C2E0095835F /* GetFacilitiesRequest.swift */; };
+		8A04E9A22A4E3C600095835F /* FacilitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9A12A4E3C600095835F /* FacilitiesResponse.swift */; };
+		8A04E9A52A4E3CA90095835F /* FacilityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9A42A4E3CA90095835F /* FacilityEntity.swift */; };
+		8A04E9AC2A4E406A0095835F /* FacilityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9AB2A4E406A0095835F /* FacilityListView.swift */; };
+		8A04E9AE2A4E40E40095835F /* FacilityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9AD2A4E40E40095835F /* FacilityListViewModel.swift */; };
+		8A04E9B22A4E41780095835F /* FacilityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9B12A4E41780095835F /* FacilityModel.swift */; };
+		8A04E9B62A4E6C7A0095835F /* FacilitySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9B52A4E6C7A0095835F /* FacilitySectionView.swift */; };
+		8A04E9B92A4E6E120095835F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9B82A4E6E120095835F /* LoadingView.swift */; };
+		8A04E9BB2A4E744C0095835F /* FacilityOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A04E9BA2A4E744C0095835F /* FacilityOptionView.swift */; };
+		8ADA967B2A4F78FC0065AED7 /* FacilityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA967A2A4F78FC0065AED7 /* FacilityUseCase.swift */; };
+		8ADA967D2A50CCAE0065AED7 /* FacilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA967C2A50CCAE0065AED7 /* FacilityStore.swift */; };
+		8ADA96802A50CE890065AED7 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADA967F2A50CE890065AED7 /* OrderedCollections */; };
+		8ADA96822A50E6780065AED7 /* FacilityOptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA96812A50E6780065AED7 /* FacilityOptionModel.swift */; };
+		8ADA96842A50E72D0065AED7 /* FacilityOptionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA96832A50E72D0065AED7 /* FacilityOptionEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A04E96F2A4E37220095835F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A04E9552A4E37220095835F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A04E95C2A4E37220095835F;
+			remoteInfo = RadiusAgent;
+		};
+		8A04E9792A4E37220095835F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A04E9552A4E37220095835F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A04E95C2A4E37220095835F;
+			remoteInfo = RadiusAgent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A04E95D2A4E37220095835F /* RadiusAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadiusAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A04E9602A4E37220095835F /* RadiusAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusAgentApp.swift; sourceTree = "<group>"; };
+		8A04E9642A4E37220095835F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A04E9662A4E37220095835F /* RadiusAgent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RadiusAgent.entitlements; sourceTree = "<group>"; };
+		8A04E9682A4E37220095835F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A04E96E2A4E37220095835F /* RadiusAgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A04E9722A4E37220095835F /* RadiusAgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusAgentTests.swift; sourceTree = "<group>"; };
+		8A04E9782A4E37220095835F /* RadiusAgentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusAgentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A04E97C2A4E37220095835F /* RadiusAgentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusAgentUITests.swift; sourceTree = "<group>"; };
+		8A04E97E2A4E37220095835F /* RadiusAgentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusAgentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A04E98E2A4E39810095835F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8A04E9902A4E39A30095835F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8A04E9922A4E3A1F0095835F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		8A04E9942A4E3A490095835F /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		8A04E9962A4E3A7D0095835F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8A04E9992A4E3AB90095835F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A04E99F2A4E3C2E0095835F /* GetFacilitiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFacilitiesRequest.swift; sourceTree = "<group>"; };
+		8A04E9A12A4E3C600095835F /* FacilitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesResponse.swift; sourceTree = "<group>"; };
+		8A04E9A42A4E3CA90095835F /* FacilityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityEntity.swift; sourceTree = "<group>"; };
+		8A04E9AB2A4E406A0095835F /* FacilityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityListView.swift; sourceTree = "<group>"; };
+		8A04E9AD2A4E40E40095835F /* FacilityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityListViewModel.swift; sourceTree = "<group>"; };
+		8A04E9B12A4E41780095835F /* FacilityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityModel.swift; sourceTree = "<group>"; };
+		8A04E9B52A4E6C7A0095835F /* FacilitySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitySectionView.swift; sourceTree = "<group>"; };
+		8A04E9B82A4E6E120095835F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8A04E9BA2A4E744C0095835F /* FacilityOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityOptionView.swift; sourceTree = "<group>"; };
+		8ADA967A2A4F78FC0065AED7 /* FacilityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityUseCase.swift; sourceTree = "<group>"; };
+		8ADA967C2A50CCAE0065AED7 /* FacilityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityStore.swift; sourceTree = "<group>"; };
+		8ADA96812A50E6780065AED7 /* FacilityOptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityOptionModel.swift; sourceTree = "<group>"; };
+		8ADA96832A50E72D0065AED7 /* FacilityOptionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityOptionEntity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A04E95A2A4E37220095835F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ADA96802A50CE890065AED7 /* OrderedCollections in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A04E96B2A4E37220095835F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A04E9752A4E37220095835F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A04E9542A4E37220095835F = {
+			isa = PBXGroup;
+			children = (
+				8A04E95F2A4E37220095835F /* RadiusAgent */,
+				8A04E9712A4E37220095835F /* RadiusAgentTests */,
+				8A04E97B2A4E37220095835F /* RadiusAgentUITests */,
+				8A04E95E2A4E37220095835F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A04E95E2A4E37220095835F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E95D2A4E37220095835F /* RadiusAgent.app */,
+				8A04E96E2A4E37220095835F /* RadiusAgentTests.xctest */,
+				8A04E9782A4E37220095835F /* RadiusAgentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A04E95F2A4E37220095835F /* RadiusAgent */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9AF2A4E41320095835F /* Domain */,
+				8A04E9A92A4E40050095835F /* App */,
+				8A04E9A82A4E3FCA0095835F /* Resources */,
+				8A04E99B2A4E3BAD0095835F /* Data */,
+				8A04E9982A4E3AA00095835F /* Common */,
+				8A04E98C2A4E386B0095835F /* Presentation */,
+				8A04E98B2A4E385E0095835F /* Services */,
+			);
+			path = RadiusAgent;
+			sourceTree = "<group>";
+		};
+		8A04E9672A4E37220095835F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9682A4E37220095835F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A04E9712A4E37220095835F /* RadiusAgentTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9722A4E37220095835F /* RadiusAgentTests.swift */,
+			);
+			path = RadiusAgentTests;
+			sourceTree = "<group>";
+		};
+		8A04E97B2A4E37220095835F /* RadiusAgentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E97C2A4E37220095835F /* RadiusAgentUITests.swift */,
+				8A04E97E2A4E37220095835F /* RadiusAgentUITestsLaunchTests.swift */,
+			);
+			path = RadiusAgentUITests;
+			sourceTree = "<group>";
+		};
+		8A04E98B2A4E385E0095835F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E98D2A4E38A70095835F /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A04E98C2A4E386B0095835F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9B72A4E6DFB0095835F /* Common */,
+				8A04E9AA2A4E40120095835F /* Facilities */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8A04E98D2A4E38A70095835F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E98E2A4E39810095835F /* Request.swift */,
+				8A04E9902A4E39A30095835F /* APIError.swift */,
+				8A04E9922A4E3A1F0095835F /* HTTPClient.swift */,
+				8A04E9942A4E3A490095835F /* URLSessionHTTPClient.swift */,
+				8A04E9962A4E3A7D0095835F /* APIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A04E9982A4E3AA00095835F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9992A4E3AB90095835F /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8A04E99B2A4E3BAD0095835F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9A32A4E3C860095835F /* Entities */,
+				8A04E99C2A4E3BB30095835F /* Networking */,
+				8ADA967C2A50CCAE0065AED7 /* FacilityStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8A04E99C2A4E3BB30095835F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E99E2A4E3BC20095835F /* Responses */,
+				8A04E99D2A4E3BB90095835F /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A04E99D2A4E3BB90095835F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E99F2A4E3C2E0095835F /* GetFacilitiesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		8A04E99E2A4E3BC20095835F /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9A12A4E3C600095835F /* FacilitiesResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		8A04E9A32A4E3C860095835F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9A42A4E3CA90095835F /* FacilityEntity.swift */,
+				8ADA96832A50E72D0065AED7 /* FacilityOptionEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8A04E9A82A4E3FCA0095835F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9672A4E37220095835F /* Preview Content */,
+				8A04E9642A4E37220095835F /* Assets.xcassets */,
+				8A04E9662A4E37220095835F /* RadiusAgent.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A04E9A92A4E40050095835F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9602A4E37220095835F /* RadiusAgentApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A04E9AA2A4E40120095835F /* Facilities */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9BC2A4E744F0095835F /* Views */,
+				8A04E9AB2A4E406A0095835F /* FacilityListView.swift */,
+				8A04E9AD2A4E40E40095835F /* FacilityListViewModel.swift */,
+			);
+			path = Facilities;
+			sourceTree = "<group>";
+		};
+		8A04E9AF2A4E41320095835F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8ADA96792A4F78E30065AED7 /* UseCase */,
+				8A04E9B02A4E413A0095835F /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8A04E9B02A4E413A0095835F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9B12A4E41780095835F /* FacilityModel.swift */,
+				8ADA96812A50E6780065AED7 /* FacilityOptionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A04E9B72A4E6DFB0095835F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9B82A4E6E120095835F /* LoadingView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8A04E9BC2A4E744F0095835F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A04E9BA2A4E744C0095835F /* FacilityOptionView.swift */,
+				8A04E9B52A4E6C7A0095835F /* FacilitySectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ADA96792A4F78E30065AED7 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				8ADA967A2A4F78FC0065AED7 /* FacilityUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A04E95C2A4E37220095835F /* RadiusAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A04E9822A4E37220095835F /* Build configuration list for PBXNativeTarget "RadiusAgent" */;
+			buildPhases = (
+				8A04E9592A4E37220095835F /* Sources */,
+				8A04E95A2A4E37220095835F /* Frameworks */,
+				8A04E95B2A4E37220095835F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadiusAgent;
+			packageProductDependencies = (
+				8ADA967F2A50CE890065AED7 /* OrderedCollections */,
+			);
+			productName = RadiusAgent;
+			productReference = 8A04E95D2A4E37220095835F /* RadiusAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A04E96D2A4E37220095835F /* RadiusAgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A04E9852A4E37220095835F /* Build configuration list for PBXNativeTarget "RadiusAgentTests" */;
+			buildPhases = (
+				8A04E96A2A4E37220095835F /* Sources */,
+				8A04E96B2A4E37220095835F /* Frameworks */,
+				8A04E96C2A4E37220095835F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A04E9702A4E37220095835F /* PBXTargetDependency */,
+			);
+			name = RadiusAgentTests;
+			productName = RadiusAgentTests;
+			productReference = 8A04E96E2A4E37220095835F /* RadiusAgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A04E9772A4E37220095835F /* RadiusAgentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A04E9882A4E37220095835F /* Build configuration list for PBXNativeTarget "RadiusAgentUITests" */;
+			buildPhases = (
+				8A04E9742A4E37220095835F /* Sources */,
+				8A04E9752A4E37220095835F /* Frameworks */,
+				8A04E9762A4E37220095835F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A04E97A2A4E37220095835F /* PBXTargetDependency */,
+			);
+			name = RadiusAgentUITests;
+			productName = RadiusAgentUITests;
+			productReference = 8A04E9782A4E37220095835F /* RadiusAgentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A04E9552A4E37220095835F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8A04E95C2A4E37220095835F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8A04E96D2A4E37220095835F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8A04E95C2A4E37220095835F;
+					};
+					8A04E9772A4E37220095835F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8A04E95C2A4E37220095835F;
+					};
+				};
+			};
+			buildConfigurationList = 8A04E9582A4E37220095835F /* Build configuration list for PBXProject "RadiusAgent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A04E9542A4E37220095835F;
+			packageReferences = (
+				8ADA967E2A50CE890065AED7 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 8A04E95E2A4E37220095835F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A04E95C2A4E37220095835F /* RadiusAgent */,
+				8A04E96D2A4E37220095835F /* RadiusAgentTests */,
+				8A04E9772A4E37220095835F /* RadiusAgentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A04E95B2A4E37220095835F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A04E9692A4E37220095835F /* Preview Assets.xcassets in Resources */,
+				8A04E9652A4E37220095835F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A04E96C2A4E37220095835F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A04E9762A4E37220095835F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A04E9592A4E37220095835F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A04E9A02A4E3C2E0095835F /* GetFacilitiesRequest.swift in Sources */,
+				8A04E9AC2A4E406A0095835F /* FacilityListView.swift in Sources */,
+				8A04E9B62A4E6C7A0095835F /* FacilitySectionView.swift in Sources */,
+				8A04E9972A4E3A7D0095835F /* APIService.swift in Sources */,
+				8A04E9B92A4E6E120095835F /* LoadingView.swift in Sources */,
+				8A04E9AE2A4E40E40095835F /* FacilityListViewModel.swift in Sources */,
+				8ADA96822A50E6780065AED7 /* FacilityOptionModel.swift in Sources */,
+				8A04E9B22A4E41780095835F /* FacilityModel.swift in Sources */,
+				8ADA96842A50E72D0065AED7 /* FacilityOptionEntity.swift in Sources */,
+				8A04E9A22A4E3C600095835F /* FacilitiesResponse.swift in Sources */,
+				8A04E9932A4E3A1F0095835F /* HTTPClient.swift in Sources */,
+				8A04E9A52A4E3CA90095835F /* FacilityEntity.swift in Sources */,
+				8A04E9912A4E39A30095835F /* APIError.swift in Sources */,
+				8A04E98F2A4E39810095835F /* Request.swift in Sources */,
+				8A04E9612A4E37220095835F /* RadiusAgentApp.swift in Sources */,
+				8A04E9BB2A4E744C0095835F /* FacilityOptionView.swift in Sources */,
+				8A04E9952A4E3A490095835F /* URLSessionHTTPClient.swift in Sources */,
+				8ADA967B2A4F78FC0065AED7 /* FacilityUseCase.swift in Sources */,
+				8ADA967D2A50CCAE0065AED7 /* FacilityStore.swift in Sources */,
+				8A04E99A2A4E3AB90095835F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A04E96A2A4E37220095835F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A04E9732A4E37220095835F /* RadiusAgentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A04E9742A4E37220095835F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A04E97F2A4E37220095835F /* RadiusAgentUITestsLaunchTests.swift in Sources */,
+				8A04E97D2A4E37220095835F /* RadiusAgentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A04E9702A4E37220095835F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A04E95C2A4E37220095835F /* RadiusAgent */;
+			targetProxy = 8A04E96F2A4E37220095835F /* PBXContainerItemProxy */;
+		};
+		8A04E97A2A4E37220095835F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A04E95C2A4E37220095835F /* RadiusAgent */;
+			targetProxy = 8A04E9792A4E37220095835F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A04E9802A4E37220095835F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A04E9812A4E37220095835F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8A04E9832A4E37220095835F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RadiusAgent/Resources/RadiusAgent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RadiusAgent/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irongru.RadiusAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A04E9842A4E37220095835F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RadiusAgent/Resources/RadiusAgent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RadiusAgent/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irongru.RadiusAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A04E9862A4E37220095835F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irongru.RadiusAgentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadiusAgent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RadiusAgent";
+			};
+			name = Debug;
+		};
+		8A04E9872A4E37220095835F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irongru.RadiusAgentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadiusAgent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RadiusAgent";
+			};
+			name = Release;
+		};
+		8A04E9892A4E37220095835F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irongru.RadiusAgentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadiusAgent;
+			};
+			name = Debug;
+		};
+		8A04E98A2A4E37220095835F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irongru.RadiusAgentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadiusAgent;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A04E9582A4E37220095835F /* Build configuration list for PBXProject "RadiusAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A04E9802A4E37220095835F /* Debug */,
+				8A04E9812A4E37220095835F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A04E9822A4E37220095835F /* Build configuration list for PBXNativeTarget "RadiusAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A04E9832A4E37220095835F /* Debug */,
+				8A04E9842A4E37220095835F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A04E9852A4E37220095835F /* Build configuration list for PBXNativeTarget "RadiusAgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A04E9862A4E37220095835F /* Debug */,
+				8A04E9872A4E37220095835F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A04E9882A4E37220095835F /* Build configuration list for PBXNativeTarget "RadiusAgentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A04E9892A4E37220095835F /* Debug */,
+				8A04E98A2A4E37220095835F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8ADA967E2A50CE890065AED7 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8ADA967F2A50CE890065AED7 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADA967E2A50CE890065AED7 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8A04E9552A4E37220095835F /* Project object */;
+}
